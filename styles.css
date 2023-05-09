@@ -1,0 +1,197 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* mis estilos */
+
+body {
+  width: 700px;
+  height: 400px;
+  margin: auto;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+}
+
+.img-section {
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: grid;
+  place-content: center;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.overlay:hover {
+  transition: all 300ms ease-out;
+  background-color: rgba(127, 236, 255, 0.459);
+  opacity: 1;
+}
+
+.low-side {
+  align-items: center;
+  margin: auto;
+}
+
+.up-side {
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+section {
+  width: 50%;
+  align-items: center;
+  margin: auto;
+  margin-top: 20%;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.nft-title {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  padding: 1rem;
+  color: hsl(178, 100%, 50%);
+}
+
+.nft-description {
+  font-weight: 400;
+  padding: 1rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.value {
+  font-weight: 600;
+  padding: 1rem;
+  display: flex;
+  color: hsl(178, 100%, 50%);
+  margin-bottom: 1rem;
+}
+
+.designer {
+  font-weight: 300;
+  padding: 1rem;
+  border-top-style: solid;
+  border-width: 1px;
+  color: rgb(255, 255, 255);
+  display: flex;
+}
+
+.days {
+  margin-left: auto;
+  display: flex;
+  color: hsl(215, 51%, 70%);
+}
+
+.icon {
+  margin-right: 9px;
+  height: 20px;
+  margin-top: 1px;
+}
+
+.icon-clock {
+  height: 16px;
+  margin: auto;
+  margin-right: 5px;
+}
+
+.face {
+  width: 20%;
+  display: flex;
+}
+
+.Creation {
+  margin: auto;
+  margin-left: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.name {
+  color: hsl(178, 100%, 50%);
+}
